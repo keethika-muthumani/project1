@@ -9,6 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Mooli&display=swap"
       rel="stylesheet"
     />
+    <style>
+      option {
+        display: block;
+        margin: 12em auto;
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -18,8 +24,89 @@
         <a href="page1.html"> Home </a>
         <a href="page 2.html">Learning Center</a>
         <a href="page3.html">Survey Questions</a>
-        <a href="#">Chat Bot</a>
+        <a href="#">Chatbot</a>
       </nav>
     </header>
+    <div class="container">
+      <div class="col-container">
+        <label for="general">
+          <ol>
+            <li>In general, would you say your health is ?</li>
+          </ol>
+        </label>
+        <textarea id="general" rows="4" cols="50"></textarea>
+      </div>
+      <div class="col-container">
+        <label for="general">
+          How would you rate your satisfaction with your social activities and
+          relationships?
+        </label>
+        <textarea id="general" rows="4" cols="50"></textarea>
+      </div>
+      <div class="col-container">
+        <label for="general">
+          How would you rate your mental health, including your mood and your
+          ability to think?
+        </label>
+        <textarea id="general" rows="4" cols="50"></textarea>
+      </div>
+      <div class="select">
+        In general, would you say your quality of life is?
+        <select class="option">
+          <option>EXCELLENT</option>
+          <option>VERY GOOD</option>
+          <option>GOOD</option>
+          <option>FAIR</option>
+          <option>POOR</option>
+        </select>
+      </div>
+      <div class="select">
+        Ability to function
+        <ol>
+          <li>
+            <label for="select1">Dressing</label>
+            <select class="option" id="select1">
+              <option>No Problem</option>
+              <option>Low</option>
+              <option>Moderate</option>
+              <option>Cant Do</option>
+            </select>
+          </li>
+          <li>
+            <label for="select1">Eating</label>
+            <select class="option" id="select1">
+              <option>No Problem</option>
+              <option>Low</option>
+              <option>Moderate</option>
+              <option>Cant Do</option>
+            </select>
+          </li>
+          <li>
+            <label for="select1">Walking</label>
+            <select class="option" id="select1">
+              <option>No Problem</option>
+              <option>Low</option>
+              <option>Moderate</option>
+              <option>Cant Do</option>
+            </select>
+          </li>
+          <li>
+            <label for="select1">Activities</label>
+            <select class="option" id="select1">
+              <option>No Problem</option>
+              <option>Low</option>
+              <option>Moderate</option>
+              <option>Cant Do</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      <div class="col-container">
+      <label for="manual">
+      When you were diagnosed? (Manual)
+      </label>
+      <textarea  id="Manual" cols="50" rows="4"></textarea>
+      </div>
+    </div>
   </body>
 </html>
