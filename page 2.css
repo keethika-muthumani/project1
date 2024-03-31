@@ -5,7 +5,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #d7e5f0;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 body {
   height: 100vh;
@@ -56,5 +59,10 @@ body {
 .heading {
   margin-bottom: 20px;
   font-size: 32px;
+  font-weight: 700;
+}
+.pre-heading {
+  margin-bottom: 20px;
+  font-size: 24px;
   font-weight: 700;
 }
