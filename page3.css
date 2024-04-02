@@ -5,10 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url("image.webp");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
 }
 body {
   height: 100vh;
@@ -63,7 +59,10 @@ body {
 }
 
 .container {
-  margin: 90px;
+  background-image: url("image.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 .col-container {

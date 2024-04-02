@@ -23,208 +23,99 @@
     <nav class="navbar">
       <a href="page1.html"> Home </a>
       <a href="page 2.html">Learning Center</a>
-
+      <a href="page3.html">Survey</a>
       <a href="#">Chatbot</a>
       <a href="page4.html">Feedback</a>
     </nav>
   </header>
   <div class="container">
-    <ol>
+    <ol style="padding: 50px;">
       <li>
         <div class="col-container">
           <label for="q1">
-            In general, would you say your health is ?
+            How would you rate your average level of joint pain over the past week? 
           </label>
-          <textarea id="q1" rows="4" cols="50"></textarea>
+          <input type="number" id="q1" min="1" max="10">
         </div>
       </li>
       <li>
         <div class="col-container">
           <label for="q2">
-            How would you rate your satisfaction with your social activities and
-            relationships?
+             How would you rank your joint stiffness to improve after waking up in morning
           </label>
-          <textarea id="q2" rows="4" cols="50"></textarea>
+      <input type="number" id="q2" min="1" max="10">
         </div>
       </li>
       <li>
         <div class="col-container">
           <label for="q3">
-            How would you rate your mental health, including your mood and your
-            ability to think?
+            To what extent do your RA symptoms make it difficult for you to carry out daily
+            tasks like grooming, dressing, or housework?
           </label>
-          <textarea id="q3" rows="4" cols="50"></textarea>
+       <input type="number" id="q3" min="1" max="10">
         </div>
       </li>
       <li>
-        <div class="select">
-          In general, would you say your quality of life is?
-          <select class="option" id="q4">
-            <option>EXCELLENT</option>
-            <option>VERY GOOD</option>
-            <option>GOOD</option>
-            <option>FAIR</option>
-            <option>POOR</option>
-          </select>
+        <div class="col-container">
+          <label for="q4">
+            Regarding your physical health in general, how would you rank it? 
+          </label>
+          <input type="number" id="q5" min="1" max="10">
         </div>
       </li>
       <li>
-        <div class="select">
-          Ability to function
-          <ol class="select-ol">
-            <li>
-              <label for="select1">Dressing</label>
-              <select class="option" id="q5">
-                <option>No Problem</option>
-                <option>Low</option>
-                <option>Moderate</option>
-                <option>Cant Do</option>
-              </select>
-            </li>
-            <li>
-              <label for="select1">Eating</label>
-              <select class="option" id="q6">
-                <option>No Problem</option>
-                <option>Low</option>
-                <option>Moderate</option>
-                <option>Cant Do</option>
-              </select>
-            </li>
-            <li>
-              <label for="select1">Walking</label>
-              <select class="option" id="q7">
-                <option>No Problem</option>
-                <option>Low</option>
-                <option>Moderate</option>
-                <option>Cant Do</option>
-              </select>
-            </li>
-            <li>
-              <label for="select1">Activities</label>
-              <select class="option" id="q8">
-                <option>No Problem</option>
-                <option>Low</option>
-                <option>Moderate</option>
-                <option>Cant Do</option>
-              </select>
-            </li>
+        <div class="col-container">
+          <label for="q5">
+        What would you rank as the severity of your emotional issues, such as anxiety,
+depression, or irritability since learning that you have RA? 
+</label>
+<input type="number" id="q5" min="1" max="10">
             </ul>
         </div>
 
       </li>
       <li>
         <div class="col-container">
-          <label for="q9">
-            When you were diagnosed? (Manual)
+          <label for="q6">
+            How much would you say it has been difficult for you to focus? 
           </label>
-          <textarea id="q9" cols="50" rows="4"></textarea>
+         <input type="number" id="q6" min="1" max="10">
         </div>
 
+      </li>
+      <li>
+        <div class="col-container">
+          <label for="q7">
+            After being diagnosed with RA, how would you grade your ability to think?
+          </label>
+          <input type="number" id="q7" min="1" max="10">
+        </div>
+      </li>
+      <li>
+        <div class="col-container">
+          <label for="q8">
+             How would you rank the possibility that you had any negative effects from the
+drugs you were taking to treat your rheumatoid arthritis? 
+          </label>
+    <input type="number" id="q8" min="1" max="10">
+        </div>
+      </li>
+      <li>
+        <div class="col-container">
+          <label for="q9">
+            How would you rate your satisfaction with your social activities and relationships?
+          </label>
+          <input type="=number" id="q9" min="1" max="10">
+          </div>
       </li>
       <li>
         <div class="col-container">
           <label for="q10">
-            Age of onset? (Manual)
+            .How would you sum up your overall quality of life?
           </label>
-          <textarea id="q10" cols="50" rows="4"></textarea>
+          <input type="number" id="q10" min="1" max="10">
         </div>
       </li>
-      <li>
-        <div class="col-container">
-          <label for="q11">
-            How often have you been bothered by emotional problems such as feeling anxious, depressed or irritable since
-            you found RA disease?
-          </label>
-          <textarea id="q11" cols="50" rows="4"></textarea>
-        </div>
-      </li>
-      <li>
-        <div class="col-container">
-          <label for="q12">
-            How would you rate your fatigue on average?
-          </label>
-          <textarea id="q12" cols="50" rows="4"></textarea>
-        </div>
-      </li>
-      <li>
-        <div class="col-container">
-          <label for="q13">
-            How often did you feel tired, even when you hadn’t done anything?
-          </label>
-          <textarea id="q13" cols="50" rows="4"></textarea>
-        </div>
-      </li>
-      <li>
-        <div class="col-container">
-          <label for="q14">
-            It has seemed like my brain was not working as well as usual?
-          </label>
-          <textarea id="q14" cols="50" rows="4"></textarea>
-        </div>
-      </li>
-      <li>
-        <div class="col-container">
-          <label for="q15">
-            I have had trouble concentrating?
-          </label>
-          <textarea id="q15" cols="50" rows="4"></textarea>
-        </div>
-      </li>
-      <li>
-        <div class="select">
-          My thinking has been slow?
-          <select class="option" id="q16">
-            <option>Never</option>
-            <option>Rarely</option>
-            <option>Sometimes</option>
-            <option>Often</option>
-          </select>
-        </div>
-      </li>
-      <li>
-        <div class="radio">
-          <label for="q16">
-            Do you now practice any form of medication?
-          </label>
-          <div class="button-radio">
-            <input type="radio" class="qs">YES
-            <input type="radio" class="question">NO
-          </div>
-        </div>
-
-      </li>
-      <li>
-        <div class="col-container">
-          <label for="q17">
-            If “yes” what medications are using for RA currently? (Manual)
-          </label>
-          <textarea id="q17" cols="50" rows="4"></textarea>
-      </li>
-  </div>
-  <li>
-    <div class="radio">
-      <label for="q18">
-        Do you consume alcohol?
-      </label>
-      <div class="button-radio">
-        <input type="radio" class="qs">YES
-        <input type="radio" class="question">NO
-      </div>
-    </div>
-  </li>
-  <li>
-    <div class="radio">
-      <label for="q19">
-        Do you smoke?
-      </label>
-      <div class="button-radio">
-        <input type="radio" class="qs">YES
-        <input type="radio" class="question">NO
-      </div>
-    </div>
-  </li>
-  </ol>
-
   <div class="btn" id="btn-submit">Submit</div>
   </div>
 
