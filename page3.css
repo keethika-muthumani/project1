@@ -26,7 +26,7 @@ body {
   text-decoration: none;
   font-weight: 700;
 }
-.navbar a {
+a {
   position: relative;
   font-size: 18px;
   color: #000000;
@@ -34,7 +34,7 @@ body {
   text-decoration: none;
   margin-left: 40px;
 }
-.navbar a::before {
+a::before {
   content: "";
   position: absolute;
   top: 100%;
@@ -44,7 +44,7 @@ body {
   background: #000000;
   transition: 0.3s;
 }
-.navbar a:hover::before {
+a:hover::before {
   width: 100%;
 }
 .paragraph {
@@ -59,16 +59,26 @@ body {
 }
 
 .container {
-  background-image: url("image.webp");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  background: #b9d7ee;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  display: flex;
+}
+.answer-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 50px;
+  justify-content: flex-end;
 }
 
 .col-container {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 50%;
   padding-left: 20px;
   margin-top: 20px;
 }
@@ -94,6 +104,8 @@ label {
   margin-bottom: 120px;
   color: white;
   cursor: pointer;
+  margin-top: 30px;
+  align-self: center;
 }
 .radio {
   display: flex;
@@ -109,4 +121,18 @@ label {
 .question {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+/* Result, rich bold bigger text */
+
+.result {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 20px;
+}
+
+#low-diet,
+#high-diet {
+  display: none;
 }

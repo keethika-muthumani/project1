@@ -8,11 +8,76 @@ const q7 = document.getElementById("q7");
 const q8 = document.getElementById("q8");
 const q9 = document.getElementById("q9");
 const q10 = document.getElementById("q10");
-const q11 = document.getElementById("q11");
-const q12 = document.getElementById("q12");
-const q13 = document.getElementById("q13");
-const q14 = document.getElementById("q14");
-const q15 = document.getElementById("q15");
+
+const result = document.getElementById("result");
+const lowDiet = document.getElementById("low-diet");
+const highDiet = document.getElementById("high-diet");
+
+lowDiet.style.display = "none";
+highDiet.style.display = "none";
+
+// add event listener to each question it should allow only numbers 1-10 to be entered
+
+q1.addEventListener("input", (e) => {
+  if (e.target.value < 1 || e.target.value > 10) {
+    e.target.value = "";
+  }
+});
+
+q2.addEventListener("input", (e) => {
+  if (e.target.value < 1 || e.target.value > 10) {
+    e.target.value = "";
+  }
+});
+
+q3.addEventListener("input", (e) => {
+  console.log(e.target.value);
+  if (e.target.value < 1 || e.target.value > 10) {
+    e.target.value = "";
+  }
+});
+
+q4.addEventListener("input", (e) => {
+  if (e.target.value < 1 || e.target.value > 10) {
+    e.target.value = "";
+  }
+});
+
+q5.addEventListener("input", (e) => {
+  if (e.target.value < 1 || e.target.value > 10) {
+    e.target.value = "";
+  }
+});
+
+q6.addEventListener("input", (e) => {
+  if (e.target.value < 1 || e.target.value > 10) {
+    e.target.value = "";
+  }
+});
+
+q7.addEventListener("input", (e) => {
+  if (e.target.value < 1 || e.target.value > 10) {
+    e.target.value = "";
+  }
+});
+
+q8.addEventListener("input", (e) => {
+  if (e.target.value < 1 || e.target.value > 10) {
+    e.target.value = "";
+  }
+});
+
+q9.addEventListener("input", (e) => {
+  if (e.target.value < 1 || e.target.value > 10) {
+    e.target.value = "";
+  }
+});
+
+q10.addEventListener("input", (e) => {
+  if (e.target.value < 1 || e.target.value > 10) {
+    e.target.value = "";
+  }
+});
 
 function getQuestion() {
   const ans = {
@@ -26,14 +91,33 @@ function getQuestion() {
     question8: q8.value,
     question9: q9.value,
     question10: q10.value,
-    question11: q11.value,
-    question12: q12.value,
-    question13: q13.value,
-    question14: q14.value,
-    question15: q15.value,
   };
 
-  return ans;
+  //show alert if any question is not answered
+  for (const key in ans) {
+    if (ans[key] === "") {
+      alert("Please answer all questions");
+      return;
+    }
+  }
+
+  //Valuse is sum of all questions, If Value is 0&lt;=40, then “low” and if value is 40&lt;=70 then “moderate” and if value is 70&lt;=100,then “high”
+
+  let sum = 0;
+  for (const key in ans) {
+    sum += parseInt(ans[key]);
+  }
+
+  if (sum >= 0 && sum <= 40) {
+    console.log("low");
+    return "low";
+  } else if (sum >= 40 && sum <= 70) {
+    console.log("moderate");
+    return "moderate";
+  } else if (sum >= 70 && sum <= 100) {
+    console.log("high");
+    return "high";
+  }
 }
 
 const btn = document.getElementById("btn-submit");
@@ -41,59 +125,19 @@ let questions = {};
 
 function onBtnClick() {
   const answers = getQuestion();
-  console.log(answers);
+  console.log("🚀 ~ onBtnClick ~ answers:", answers);
+
+  result.innerHTML = `<h3>Your Result is:  ${answers}</h3>`;
+
+  if (answers === "low") {
+    lowDiet.style.display = "block";
+    highDiet.style.display = "none";
+  }
+
+  if (answers === "moderate" || answers === "high") {
+    lowDiet.style.display = "none";
+    highDiet.style.display = "block";
+  }
 }
 
 btn.addEventListener("click", onBtnClick);
-
-// const bike = {
-//   name: "mt15",
-//   color: "black",
-//   company: "yamaha",
-//   rate: 100000,
-//   speed: 90,
-//   wheel: 2,
-//   member: 2,
-//   owner: {
-//     name: "Karthika",
-//     husbandName: "Sarath",
-//     area: "Kalaiyarkoil",
-//   },
-//   printHi: function () {
-//     return "Hii " + this.name;
-//   },
-//   calculateEMI: function (initalAmount, intrest) {
-//     const balanceAmount = this.rate - initalAmount;
-//     const monthlyPricipal = balanceAmount / 12;
-//     const monthlyIntrest = (balanceAmount * intrest) / 12;
-
-//     return monthlyPricipal + monthlyIntrest;
-//   },
-// };
-
-// const greeting = bike.printHi();
-
-// const emi = bike.calculateEMI(30000, 0.08);
-
-// console.log(bike);
-
-// const arr = [1, 3, 4];
-
-// console.log(arr);
-
-// const fullname = "Keerthi";
-
-// console.log(fullname.toLowerCase());
-
-// function divide(value3, value4) {
-//   return value3 / value4;
-// }
-// const result = divide(10, 2);
-// console.log(result);
-
-// function evan(value) {
-//   return value % 2 === 0;
-// }
-
-// const isEvan = evan(2355);
-// console.log(isEvan);
