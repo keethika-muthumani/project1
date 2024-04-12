@@ -58,7 +58,7 @@ a:hover::before {
   font-weight: 700;
 }
 
-.container {
+.container-qs {
   background: #b9d7ee;
   padding: 50px;
   display: flex;

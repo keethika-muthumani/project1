@@ -125,7 +125,6 @@ let questions = {};
 
 function onBtnClick() {
   const answers = getQuestion();
-  console.log("🚀 ~ onBtnClick ~ answers:", answers);
 
   result.innerHTML = `<h3>Your Result is:  ${answers}</h3>`;
 

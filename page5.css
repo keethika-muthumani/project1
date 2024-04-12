@@ -17,6 +17,13 @@
   box-sizing: border-box;
   background-color: lightgray;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  margin-top: 60px;
+  height: 100vh;
+}
 body {
   height: 100vh;
 }
